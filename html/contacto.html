@@ -9,6 +9,13 @@
     <meta name="description" content="En esta página encontrarás un formulario donde podrás solicitr información turística del Parque Nacional El Leoncito."/>
     <meta name="keywords"  content="PAMPA EL LEONCITO, SAN JUAN, ARGENTINA, TURISMO, INFORMACIÓN TURÍSTICA, TURISMO AVENTURA"/>
     <meta name="author" content="Sol Ferri" />
+    <meta property="og title" content="El leoncito" />
+    <meta property="og description" content="Esta página promociona turísticamente el Parque Nacional El Leoncito, mostrando todas las actividades que se pueden realizar allí y contando parte de su historia " />
+    <meta property="og:image" itemprop="image" href= "../imagenes/Logo-leoncito.png" />
+    <meta property="og:image:width" content="640"> <meta property="og:image:height" content="300"> 
+    <meta property="og locale" content="es_ES" />
+    <meta property="og url" content= "https://solf-i.github.io/Leoncito-Ferri-Jul-21/"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -44,20 +51,22 @@
       </div>
     </nav>
 
+    <div class="contacto">
+
     <form action="" method="">
       <fieldset id="field">
         <legend id="form">FORMULARIO DE CONTACTO</legend>
 
+        <div class="label">
+
         <label for="nombreUsuario">Ingrese su nombre</label>
-        <input
-          type="text"
-          id="nombreUsuario"
-          placeholder="Máximo 10 caracteres"
-        />
+        <input type="text" placeholder="Máximo 10 caracteres"/>
+          
         <label for="email" class="form__label1">Ingrese su E-mail</label>
-        <input type="email" id="email" class="form__label2" />
-        <br />
-        <br />
+        <input type="email"  class="form__label2" />
+        
+        </div>
+       
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Motivo de su consulta
@@ -68,27 +77,24 @@
             <li><a class="dropdown-item" href="#">Otra</a></li>
           </ul>
         </div>
-      
-        <br />
-        <br />
-        Ingrese su consulta:
-        <br />
-        <textarea name="" id="texto" cols="100" rows="10"> </textarea>
+             
+        <p>   Ingrese su consulta: </p>
 
-        <br />
-        <br />
-        <div>
+        <textarea name="" id="texto"> </textarea>
+
+        <div >
           <div class="news">¿Desea recibir nuestro Newsletter?</div>
           <input type="checkbox" name="acepta" value="1" class="news" />
         </div>
-        <br />
-        <br />
+
         <div class="news1">
           <input type="submit" value="Enviar" class="news1__enviar" />
           <input type="reset" value="Borrar formulario" class="news1__borrar" />
         </div>
       </fieldset>
     </form>
+    </div>
+
 
     <footer class="grid__footer">
       <div class="direccion">
@@ -110,7 +116,7 @@
 
       <div class="horario">
         <ion-icon name="alarm-outline"></ion-icon>
-        <p>Lunes a viernes de 9:00 a 17:00</p>
+        <p>Lunes a viernes de 9 a 17 hs.</p>
       </div>
 
       <div class="email">

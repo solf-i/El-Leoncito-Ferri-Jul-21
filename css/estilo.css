@@ -14,96 +14,103 @@
   height: 100%;
   overflow-x: hidden; }
 
+/*INDEX.HTML*/
 body {
   background-image: url("../imagenes/pampa leoncito.png");
   background-repeat: no-repeat;
   background-size: cover; }
-
-h1 {
-  color: #e09d0a;
-  text-shadow: 4px 2px 2px #645942;
-  font-size: 1.9rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-  padding-top: 20px;
-  animation: heartBeat;
-  animation-duration: 5s;
-  font-stretch: expanded; }
-
-/*INDEX.HTML*/
-.grilla__index {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 220px 220px 250px;
-  grid-template-areas: " index__1 index__1 index__1 index__1 " "video video foto1 foto2" "video video foto4 foto5" "foto3 index__2 index__2 index__2";
-  padding: 20px;
-  gap: 10px; }
-  .grilla__index .index__1 {
-    grid-area: index__1;
-    background-color: #ffffff;
-    opacity: 0.7;
-    border-radius: 7px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    .grilla__index .index__1 .index__p1 {
-      font-size: 1rem;
-      color: #000000;
-      text-align: center;
-      font-weight: bold;
-      grid-area: index__1; }
-  .grilla__index .index__2 {
-    grid-area: index__2;
-    background-color: #ffffff;
-    opacity: 0.7;
-    border-radius: 7px;
-    padding-top: 80px; }
-    .grilla__index .index__2 .index__p2 {
-      font-size: 1.1rem;
-      color: #000000;
-      text-align: center;
-      padding-left: 15px;
-      padding-right: 15px;
-      font-weight: bold;
-      grid-area: index__2; }
-  .grilla__index .main__iframe {
-    grid-area: video;
-    border-radius: 7px; }
-  .grilla__index .foto1 {
-    background-image: url("../imagenes/puma.png");
-    grid-area: foto1;
-    background-size: cover;
-    border-radius: 7px; }
-  .grilla__index .foto1:hover {
-    transform: scale3d(1.3, 1.3, 1.3); }
-  .grilla__index .foto2 {
-    background-image: url("../imagenes/florleoncito.png");
-    grid-area: foto2;
-    background-size: cover;
-    border-radius: 7px; }
-  .grilla__index .foto2:hover {
-    transform: scale3d(1.3, 1.3, 1.3); }
-  .grilla__index .foto3 {
-    background-image: url("../imagenes/mirador2.png");
-    grid-area: foto3;
-    background-size: cover;
-    border-radius: 7px; }
-  .grilla__index .foto3:hover {
-    transform: scale3d(1.3, 1.3, 1.3); }
-  .grilla__index .foto4 {
-    background-image: url("../imagenes/Parque leoncito.png");
-    grid-area: foto4;
-    background-size: cover;
-    border-radius: 7px; }
-  .grilla__index .foto4:hover {
-    transform: scale3d(1.3, 1.3, 1.3); }
-  .grilla__index .foto5 {
-    background-image: url("../imagenes/PampaElLeoncito.png");
-    grid-area: foto5;
-    background-size: cover;
-    border-radius: 7px; }
-  .grilla__index .foto5:hover {
-    transform: scale3d(1.3, 1.3, 1.3); }
+  body h1 {
+    color: #e09d0a;
+    text-shadow: 4px 2px 2px #645942;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    animation: heartBeat;
+    animation-duration: 5s;
+    font-stretch: expanded; }
+  body .grilla__index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 220px 220px 250px;
+    grid-template-areas: " index__1 index__1 index__1 index__1 " "video video foto1 foto2" "video video foto4 foto5" "foto3 foto3 index__2 index__2";
+    padding: 20px;
+    gap: 10px;
+    width: 100%; }
+    body .grilla__index .index__1 {
+      grid-area: index__1;
+      background-color: #ffffff;
+      opacity: 0.7;
+      border-radius: 7px; }
+      body .grilla__index .index__1 .index__p1 {
+        font-size: 1.2rem;
+        color: #000000;
+        text-align: center;
+        font-weight: bold;
+        padding: 5%;
+        padding-top: 3%;
+        margin-bottom: 1%; }
+    body .grilla__index .index__2 {
+      grid-area: index__2;
+      background-color: #ffffff;
+      opacity: 0.7;
+      border-radius: 7px; }
+      body .grilla__index .index__2 .index__p2 {
+        font-size: 1.2rem;
+        color: #000000;
+        text-align: center;
+        padding: 5%;
+        padding-top: 3%;
+        font-weight: bold;
+        grid-area: index__2; }
+    body .grilla__index .main__iframe {
+      grid-area: video;
+      height: 0;
+      position: relative;
+      width: 100%; }
+      body .grilla__index .main__iframe iframe {
+        position: absolute;
+        height: 450px;
+        width: 100%;
+        top: 0;
+        left: 0%;
+        border-radius: 7px; }
+    body .grilla__index .foto1 {
+      background-image: url("../imagenes/puma.png");
+      grid-area: foto1;
+      background-size: cover;
+      border-radius: 7px; }
+    body .grilla__index .foto1:hover {
+      transform: scale3d(1.3, 1.3, 1.3); }
+    body .grilla__index .foto2 {
+      background-image: url("../imagenes/florleoncito.png");
+      grid-area: foto2;
+      background-size: cover;
+      border-radius: 7px; }
+    body .grilla__index .foto2:hover {
+      transform: scale3d(1.3, 1.3, 1.3); }
+    body .grilla__index .foto3 {
+      background-image: url("../imagenes/mirador1.png");
+      grid-area: foto3;
+      background-size: cover;
+      border-radius: 7px; }
+    body .grilla__index .foto3:hover {
+      transform: scale3d(1.3, 1.3, 1.3); }
+    body .grilla__index .foto4 {
+      background-image: url("../imagenes/Parque leoncito.png");
+      grid-area: foto4;
+      background-size: cover;
+      border-radius: 7px; }
+    body .grilla__index .foto4:hover {
+      transform: scale3d(1.3, 1.3, 1.3); }
+    body .grilla__index .foto5 {
+      background-image: url("../imagenes/PampaElLeoncito.png");
+      grid-area: foto5;
+      background-size: cover;
+      border-radius: 7px; }
+    body .grilla__index .foto5:hover {
+      transform: scale3d(1.3, 1.3, 1.3); }
 
 /*ASTROTURISMO.HTML*/
 .astro__grilla {
@@ -244,7 +251,8 @@ h1 {
     transform: rotateX(70deg); }
 
 .main__carro {
-  padding-left: 3%; }
+  padding-left: 3%;
+  /*HTML CARROVELISMO*/ }
   .main__carro .carro__texto {
     padding: 10px;
     font-size: 1rem;
@@ -267,7 +275,7 @@ h1 {
       grid-area: carro1;
       background-image: url("../imagenes/carrovelismo.png");
       background-size: cover;
-      border: 4px solid #000080;
+      border: 4px solid #ffffff;
       margin-left: 10px; }
     .main__carro .galeria__carro .carro__f2 {
       grid-area: carro2;
@@ -275,72 +283,91 @@ h1 {
       background-size: cover;
       margin-left: 10px;
       margin-bottom: 10px;
-      border: 4px solid #000080; }
+      border: 4px solid #ffffff; }
     .main__carro .galeria__carro .carro__f3 {
       grid-area: carro3;
       background-image: url("../imagenes/carro2.png");
       background-size: cover;
       margin-right: 10px;
-      border: 4px solid #000080; }
+      border: 4px solid #ffffff; }
     .main__carro .galeria__carro .carro__f4 {
-      grid-area: carro4; }
+      grid-area: carro4;
+      height: 0;
+      position: relative; }
+      .main__carro .galeria__carro .carro__f4 iframe {
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        top: 0;
+        left: 0%;
+        border: 4px solid #ffffff; }
     .main__carro .galeria__carro .carro__f5 {
       grid-area: carro5;
       background-image: url("../imagenes/PampaElLeoncito.png");
       background-size: cover;
       margin-bottom: 10px;
       margin-right: 10px;
-      border: 4px solid #000080; }
+      border: 4px solid #ffffff; }
 
 /*CONTACTO.HTML*/
-#field {
-  border: 3px solid #002db3;
-  width: 60%;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  padding: 1%;
-  color: #002db3;
-  font-weight: bolder;
-  background: linear-gradient(3deg, #db8e22 0%, #ecaa5d 36%, #f9d39d 70%, #ffebce 100%);
-  opacity: 0.8; }
-  #field #form {
-    color: #000080;
+.contacto {
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+  .contacto #field {
+    border: 3px solid #002db3;
+    padding: 1%;
+    color: #002db3;
     font-weight: bolder;
-    font-size: 1.1rem; }
-  #field .form__label1 {
-    display: inline-block;
-    position: relative;
-    left: 4%; }
-  #field .form__label2 {
-    display: inline-block;
-    position: relative;
-    left: 5%; }
-  #field #texto {
-    cursor: text; }
-  #field .news {
-    display: inline-flex;
-    justify-content: space-evenly; }
-  #field .news1 {
-    display: flex;
-    justify-content: space-evenly;
-    width: 20%;
-    margin: 20px; }
-    #field .news1 .news1__enviar {
-      background-color: #000080;
-      border: #000080;
-      color: #ffff;
-      font-weight: bold;
-      padding: 2%;
-      border-radius: 15%; }
-    #field .news1 .news1__borrar {
-      background-color: #000080;
-      border: #000080;
-      color: #ffff;
-      font-weight: bold;
-      padding: 2%;
-      border-radius: 10%;
-      margin-left: 3%; }
+    background: linear-gradient(3deg, #db8e22 0%, #ecaa5d 36%, #f9d39d 70%, #ffebce 100%);
+    opacity: 0.8; }
+    .contacto #field #form {
+      color: #000080;
+      font-weight: bolder;
+      font-size: 1.1rem;
+      padding-top: 1%;
+      padding-bottom: 1%; }
+    .contacto #field .label {
+      width: 100%; }
+      .contacto #field .label .nombreUsuario {
+        padding-top: 1%;
+        padding-bottom: 1%; }
+      .contacto #field .label .form__label1 {
+        display: inline-block;
+        position: relative; }
+      .contacto #field .label .form__label2 {
+        display: inline-block;
+        position: relative; }
+    .contacto #field .dropdown {
+      padding-top: 2%; }
+    .contacto #field #texto {
+      cursor: text;
+      width: 100%;
+      height: 200px; }
+    .contacto #field .news {
+      display: inline-flex;
+      justify-content: space-evenly; }
+    .contacto #field .news1 {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-left: 1%; }
+      .contacto #field .news1 .news1__enviar {
+        background-color: #143572;
+        border: #143572;
+        color: #ffff;
+        font-weight: bold;
+        padding: 2%;
+        border-radius: 15%; }
+      .contacto #field .news1 .news1__borrar {
+        background-color: #143572;
+        border: #143572;
+        color: #ffff;
+        font-weight: bold;
+        padding: 2%;
+        border-radius: 10%;
+        margin-left: 4%; }
 
 /*INFORMACIONGENERAL.HTML*/
 .main__infogrl {
@@ -413,7 +440,8 @@ h1 {
 /*CSS FOOTER - COMÚN PARA TODOS LOS HTML*/
 .grid__footer {
   bottom: 0%;
-  padding-bottom: 20px;
+  padding-bottom: 2%;
+  width: 100%;
   color: #ffffff;
   box-shadow: 10px 0px 10px #313030be;
   background-color: #143572;
@@ -429,7 +457,7 @@ h1 {
     padding-right: 5px; }
     .grid__footer .direccion p {
       margin-left: 12px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-top: 4px;
       color: #ffffff;
       font-weight: 400; }
@@ -438,16 +466,19 @@ h1 {
       height: 17px;
       margin-top: 4px; }
   .grid__footer .foot__iframe {
-    width: 180px;
-    height: 95px;
-    overflow: hidden;
     grid-area: foot__iframe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 3px solid #121d33;
     border-radius: 7px;
-    margin-top: 6px; }
+    margin-top: 4%;
+    width: 70%;
+    height: 100%;
+    position: fixed; }
+    .grid__footer .foot__iframe iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0%; }
   .grid__footer .telefono {
     grid-area: telefono;
     display: flex;
@@ -455,15 +486,14 @@ h1 {
     margin-left: 20px; }
     .grid__footer .telefono p {
       margin-left: 12px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-top: 6px;
       color: #ffffff;
       font-weight: 400; }
     .grid__footer .telefono ion-icon {
       width: 17px;
       height: 17px;
-      margin-top: 6px;
-      font-size: 1rem; }
+      margin-top: 6px; }
   .grid__footer .horario {
     grid-area: horario;
     display: flex;
@@ -513,10 +543,10 @@ h1 {
   .grid__footer .seguinos {
     text-align: end;
     grid-area: seguinos;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #ffffff;
     font-weight: 400;
-    margin-right: 45px; }
+    margin-right: 5%; }
   .grid__footer .logo {
     grid-area: logo;
     display: inline-flex;
@@ -524,6 +554,9 @@ h1 {
     justify-content: center;
     margin-left: 3px;
     padding-left: 1px; }
+    .grid__footer .logo a img {
+      width: 40px;
+      height: 40px; }
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
@@ -537,192 +570,189 @@ h1 {
     width: 100%;
     height: 100%;
     overflow-x: hidden; }
+  /*INDEX.HTML*/
   body {
     background-image: url("../imagenes/pampa leoncito.png");
     background-repeat: no-repeat;
-    background-size: cover; }
-  h1 {
-    color: #e09d0a;
-    text-shadow: 4px 2px 2px #645942;
-    font-size: 0.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 10px;
-    animation: heartBeat;
-    animation-duration: 5s;
-    font-stretch: expanded; }
-  /*INDEX.HTML*/
-  .grilla__index {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 110px 110px 110px 200px 125px;
-    grid-template-areas: " index__1 index__1" "video foto1" "video foto2" "foto4 foto5" "foto3 foto3" "index__2 index__2";
-    padding: 10px;
-    gap: 8px; }
-    .grilla__index .index__1 {
-      grid-area: index__1;
-      background-color: #ffffff;
-      opacity: 0.7;
-      border-radius: 7px;
-      padding-left: 8px;
-      padding-right: 8px; }
-      .grilla__index .index__1 .index__p1 {
-        font-size: 0.6rem;
-        color: #00061a;
-        text-align: center;
-        font-weight: bold;
-        grid-area: index__1; }
-    .grilla__index .index__2 {
-      grid-area: index__2;
-      background-color: #ffffff;
-      opacity: 0.7;
-      border-radius: 7px;
-      padding-top: 40px; }
-      .grilla__index .index__2 .index__p2 {
-        font-size: 0.6rem;
-        color: #00061a;
-        text-align: center;
-        padding-left: 8px;
-        padding-right: 8px;
-        font-weight: bold;
-        grid-area: index__2; }
-    .grilla__index .main__iframe {
-      grid-area: video;
-      border-radius: 7px;
+    background-size: auto; }
+    body h1 {
+      color: #e09d0a;
+      text-shadow: 4px 2px 2px #645942;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+      padding-top: 10px;
+      animation: heartBeat;
+      animation-duration: 5s;
+      font-stretch: expanded; }
+    body .grilla__index {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px 90px 90px 120px;
+      grid-template-areas: " index__1 index__1" "video video" "video video" "foto1 foto2";
+      padding: 1%;
+      gap: 0.3%;
       width: 100%;
-      height: 220px; }
-    .grilla__index .foto1 {
-      background-image: url("../imagenes/puma.png");
-      background-size: cover;
-      grid-area: foto1;
-      border-radius: 7px; }
-    .grilla__index .foto1:hover {
-      transform: scale3d(1.3, 1.3, 1.3); }
-    .grilla__index .foto2 {
-      background-image: url("../imagenes/florleoncito.png");
-      background-size: cover;
-      grid-area: foto2;
-      border-radius: 7px; }
-    .grilla__index .foto2:hover {
-      transform: scale3d(1.3, 1.3, 1.3); }
-    .grilla__index .foto3 {
-      background-image: url("../imagenes/mirador2.png");
-      background-size: cover;
-      grid-area: foto3;
-      border-radius: 7px;
-      width: auto;
-      height: auto; }
-    .grilla__index .foto3:hover {
-      transform: scale3d(1.3, 1.3, 1.3); }
-    .grilla__index .foto4 {
-      background-image: url("../imagenes/Parque leoncito.png");
-      background-size: cover;
-      grid-area: foto4;
-      border-radius: 7px; }
-    .grilla__index .foto4:hover {
-      transform: scale3d(1.3, 1.3, 1.3); }
-    .grilla__index .foto5 {
-      background-image: url("../imagenes/PampaElLeoncito.png");
-      background-size: cover;
-      grid-area: foto5;
-      border-radius: 7px; }
-    .grilla__index .foto5:hover {
-      transform: scale3d(1.3, 1.3, 1.3); }
+      padding-bottom: 3%; }
+      body .grilla__index .index__1 {
+        grid-area: index__1;
+        background-color: #ffffff;
+        opacity: 0.7;
+        border-radius: 7px; }
+        body .grilla__index .index__1 .index__p1 {
+          font-size: 0.8rem;
+          color: #00061a;
+          text-align: center;
+          font-weight: bold;
+          grid-area: index__1;
+          margin-bottom: 1%;
+          padding-bottom: 0; }
+      body .grilla__index .index__2 {
+        grid-area: index__2;
+        background-color: #ffffff;
+        opacity: 0.7;
+        border-radius: 7px;
+        margin-bottom: 20%;
+        display: none; }
+        body .grilla__index .index__2 .index__p2 {
+          font-size: 0.6rem;
+          color: #00061a;
+          text-align: center;
+          font-weight: bold;
+          grid-area: index__2;
+          display: none; }
+      body .grilla__index .main__iframe {
+        grid-area: video;
+        height: 0;
+        border-radius: 7px; }
+        body .grilla__index .main__iframe iframe {
+          position: absolute;
+          height: 180px;
+          width: 100%;
+          top: 0;
+          left: 0%;
+          border-radius: 7px; }
+      body .grilla__index .foto1 {
+        background-image: url("../imagenes/puma.png");
+        background-size: cover;
+        grid-area: foto1;
+        border-radius: 7px; }
+      body .grilla__index .foto1:hover {
+        transform: scale3d(1.3, 1.3, 1.3); }
+      body .grilla__index .foto2 {
+        background-image: url("../imagenes/florleoncito.png");
+        background-size: cover;
+        grid-area: foto2;
+        border-radius: 7px; }
+      body .grilla__index .foto2:hover {
+        transform: scale3d(1.3, 1.3, 1.3); }
   /*ASTROTURISMO.HTML*/
-  .astro__grilla {
+  body .astro__grilla {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-areas: "texto astro2" "texto astro1" "texto astro3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "texto" "texto" "astro3";
     padding-top: 0px;
     margin-bottom: 0px;
     padding: 10px;
     margin: 0px;
     gap: 2px; }
-    .astro__grilla .astro__texto {
+    body .astro__grilla .astro__texto {
       grid-area: texto;
       text-align: justify;
-      background: linear-gradient(53deg, #020024 0%, #043974 0%, #3c387a 0%, rgba(163, 206, 255, 0.925105) 48%, #3c387a 100%);
+      background: #080450;
       margin-top: 5px;
       margin-bottom: 0px;
-      border: 5px ridge; }
-      .astro__grilla .astro__texto .astro__p {
-        grid-area: texto;
-        font-size: 0.6rem;
-        font-weight: bold;
-        padding: 5px; }
-      .astro__grilla .astro__texto h4 {
-        color: #ffffff;
+      border: 2px ridge; }
+      body .astro__grilla .astro__texto .astro__p {
         grid-area: texto;
         font-size: 0.7rem;
-        padding-left: 5px;
+        font-weight: bold;
+        padding: 3%;
+        padding-top: 0;
+        margin-bottom: 0;
+        color: #ffffff; }
+      body .astro__grilla .astro__texto h4 {
+        color: #e09d0a;
+        grid-area: texto;
+        font-size: 0.7rem;
+        padding-left: 2%;
         text-shadow: 2px 2px #242222; }
-      .astro__grilla .astro__texto .a__h4 {
+      body .astro__grilla .astro__texto .a__h4 {
         text-decoration: none; }
-      .astro__grilla .astro__texto h4:hover {
+      body .astro__grilla .astro__texto h4:hover {
         color: #a0bcf0; }
-      .astro__grilla .astro__texto .astro__p2 {
+      body .astro__grilla .astro__texto .astro__p2 {
         grid-area: texto;
         font-size: 0.7rem;
         font-weight: bold;
-        padding: 10px;
+        padding: 3%;
+        padding-top: 0;
         text-align: justify;
-        margin-top: 0px; }
-    .astro__grilla .astro__1 {
+        margin-top: 0px;
+        margin-bottom: 0;
+        color: #ffffff; }
+    body .astro__grilla .astro__1 {
       grid-area: astro1;
       background-image: url("../imagenes/Astro1.png");
       background-size: cover;
       margin-top: 20px;
       margin-right: 10px;
-      border: 4px outset; }
-    .astro__grilla .astro__2 {
+      border: 4px outset;
+      display: none; }
+    body .astro__grilla .astro__2 {
       grid-area: astro2;
       background-image: url("../imagenes/Astro2.png");
       background-size: cover;
       margin-top: 25px;
-      border: 4px outset; }
-    .astro__grilla .astro__3 {
+      border: 4px outset;
+      display: none; }
+    body .astro__grilla .astro__3 {
       grid-area: astro3;
       background-image: url("../imagenes/Observatorio2.png");
       background-size: cover;
-      margin-right: 5px;
-      border: 4px outset; }
+      margin-right: 0;
+      border: 2px outset; }
   /*CAMINATAS.HTML*/
   .main__caminata {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: "fotoC1 cam1" " cam2 fotoC2" "fotoC3 cam3 ";
+    grid-template-rows: 170px 170px 150px 100px;
+    grid-template-areas: "cam1 cam1" "cam2 cam2" "cam3 cam3" "fotoC1 fotoC2";
     padding-top: 0px;
     margin-bottom: 0px;
-    padding: 5%;
-    margin: 0px; }
+    padding-left: 3%;
+    margin: 0px;
+    gap: .3%; }
     .main__caminata .main__cam1 {
       background-color: #ebd096;
       opacity: 0.7;
       padding-top: 5px;
       grid-area: cam1; }
       .main__caminata .main__cam1 .main__camH1 {
-        padding: 0;
-        font-size: 0.7rem;
-        text-shadow: none;
+        padding-left: 4%;
+        font-size: 0.75rem;
+        font-weight: bold;
         grid-area: cam1; }
       .main__caminata .main__cam1 .main__camP1 {
-        padding: 7px;
+        padding-left: 4%;
+        padding-right: 4%;
         font-size: 0.7rem;
         text-align: justify;
         grid-area: cam1; }
     .main__caminata .fotoC1 {
-      height: 150px;
+      height: 100px;
       grid-area: fotoC1;
-      transition: all 3s; }
+      transition: all 3s;
+      border: .1px solid #b0c263; }
     .main__caminata .fotoC1:hover {
       transform: rotateX(70deg); }
     .main__caminata .fotoC2 {
-      height: 150px;
+      height: 100px;
       grid-area: fotoC2;
-      transition: all 3s; }
+      transition: all 3s;
+      border: .1px solid #b0c263; }
     .main__caminata .fotoC2:hover {
       transform: rotateY(70deg); }
     .main__caminata .main__cam2 {
@@ -731,12 +761,13 @@ h1 {
       padding-top: 5px;
       grid-area: cam2; }
       .main__caminata .main__cam2 .main__camH2 {
-        padding: 0;
-        font-size: 0.7rem;
-        text-shadow: none;
+        padding-left: 4%;
+        font-size: 0.75rem;
+        font-weight: bold;
         grid-area: cam2; }
       .main__caminata .main__cam2 .main__camP2 {
-        padding: 5px;
+        padding-left: 4%;
+        padding-right: 4%;
         font-size: 0.7rem;
         text-align: justify;
         grid-area: cam2; }
@@ -746,195 +777,211 @@ h1 {
       padding-top: 5px;
       grid-area: cam3; }
       .main__caminata .main__cam3 .main__camH3 {
-        padding: 0;
-        font-size: 0.7rem;
-        text-shadow: none;
+        padding-left: 4%;
+        font-size: 0.75rem;
+        font-weight: bold;
         grid-area: cam3; }
       .main__caminata .main__cam3 .main__camP3 {
-        padding: 5px;
+        padding-left: 4%;
+        padding-right: 4%;
         font-size: 0.7rem;
         text-align: justify;
         grid-area: cam3; }
     .main__caminata .fotoC3 {
       height: 150px;
       grid-area: fotoC3;
-      transition: all 3s; }
+      transition: all 3s;
+      display: none; }
     .main__caminata .fotoC3:hover {
       transform: rotateX(70deg); }
   /*CARROVELISMO.HTML*/
   .main__carro {
-    padding-left: 1%; }
+    width: 100%;
+    padding-bottom: 3%; }
     .main__carro .carro__texto {
-      padding: 5px;
       font-size: 0.7rem;
       text-align: center;
       font-weight: bold;
-      margin-top: 15px; }
+      margin: 0;
+      padding-bottom: 0; }
       .main__carro .carro__texto .carro__p {
-        padding: 10px; }
+        padding: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 0; }
     .main__carro .galeria__carro {
       display: grid;
-      grid-template-columns: 200px 1fr;
-      grid-template-rows: 80px 80px 80px 80px;
-      grid-template-areas: "carro1 carro3" "carro1 carro4" "carro2 carro4" "carro2 carro5";
+      grid-template-columns: 1fr;
+      grid-template-rows: 160px;
+      grid-template-areas: "carro4 " "carro4 ";
       padding-top: 0px;
-      margin-bottom: 0px;
-      margin: 0px;
-      gap: 5px; }
+      margin-bottom: 3%;
+      margin: 1%;
+      gap: 1%; }
       .main__carro .galeria__carro .carro__f1 {
-        grid-area: carro1;
-        background-image: url("../imagenes/carrovelismo.png");
-        background-size: cover;
-        border: 4px solid #000080;
-        margin-left: 5px;
-        height: auto;
-        width: auto; }
+        display: none; }
       .main__carro .galeria__carro .carro__f2 {
-        grid-area: carro2;
-        background-image: url("../imagenes/carro1.png");
-        background-size: cover;
-        margin-left: 5px;
-        margin-bottom: 5px;
-        border: 4px solid #000080;
-        height: auto;
-        width: auto; }
+        display: none; }
       .main__carro .galeria__carro .carro__f3 {
         grid-area: carro3;
         background-image: url("../imagenes/carro2.png");
         background-size: cover;
-        margin-right: 5px;
-        border: 4px solid #000080;
-        height: auto;
-        width: auto; }
+        border: 2px solid #ffffff;
+        display: none; }
       .main__carro .galeria__carro .carro__f4 {
-        grid-area: carro4; }
+        grid-area: carro4;
+        height: 0;
+        position: relative; }
+        .main__carro .galeria__carro .carro__f4 iframe {
+          position: absolute;
+          height: 160px;
+          width: 80%;
+          top: 0;
+          left: 8%;
+          border: 4px solid #ffffff; }
       .main__carro .galeria__carro .carro__f5 {
         grid-area: carro5;
         background-image: url("../imagenes/PampaElLeoncito.png");
         background-size: cover;
-        margin-bottom: 5px;
-        margin-right: 5px;
-        border: 4px solid #000080;
-        height: auto;
-        width: auto; }
+        border: 2px solid #ffffff;
+        display: none; }
   /*CONTACTO.HTML*/
-  #field {
-    border: 3px solid #002db3;
+  .contacto {
     width: 90%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding: 1%;
-    color: #002db3;
-    font-size: 0.9rem;
-    font-weight: bolder;
-    background: linear-gradient(3deg, #db8e22 0%, #ecaa5d 36%, #f9d39d 70%, #ffebce 100%);
-    opacity: 0.8; }
-    #field #form {
-      color: #000080;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding-bottom: 7%; }
+    .contacto #field {
+      border: 3px solid #002db3;
+      padding: 1%;
+      color: #002db3;
+      font-size: 0.9rem;
       font-weight: bolder;
-      font-size: 0.8rem; }
-    #field .form__label1 {
-      display: inline-block;
-      position: relative;
-      left: 1%; }
-    #field .form__label2 {
-      display: inline-block;
-      position: relative;
-      left: 0.5%; }
-    #field #texto {
-      cursor: text; }
-    #field .news {
-      display: block;
-      justify-content: space-evenly; }
-    #field .news1 {
-      display: flex;
-      justify-content: space-evenly;
-      width: 70%;
-      margin: 5px; }
-      #field .news1 .news1__enviar {
-        background-color: #000080;
-        border: #000080;
-        color: #ffff;
-        font-weight: bold;
-        padding: 2%;
-        border-radius: 15%;
-        padding-left: 10px; }
-      #field .news1 .news1__borrar {
-        background-color: #000080;
-        border: #000080;
-        color: #ffff;
-        font-weight: bold;
-        padding: 2%;
-        border-radius: 10%;
-        margin-left: 2%; }
+      background: linear-gradient(3deg, #db8e22 0%, #ecaa5d 36%, #f9d39d 70%, #ffebce 100%);
+      opacity: 0.8; }
+      .contacto #field #form {
+        color: #000080;
+        font-weight: bolder;
+        font-size: 0.8rem; }
+      .contacto #field .form__label1 {
+        display: inline-block;
+        position: relative; }
+      .contacto #field .form__label2 {
+        display: inline-block;
+        position: relative;
+        left: 1%; }
+      .contacto #field #texto {
+        cursor: text;
+        width: 90%;
+        height: 100px; }
+      .contacto #field .news {
+        display: block;
+        justify-content: space-evenly; }
+      .contacto #field .news1 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: 5px; }
+        .contacto #field .news1 .news1__enviar {
+          background-color: #000080;
+          border: #000080;
+          color: #ffff;
+          font-weight: bold;
+          padding: 2%;
+          border-radius: 15%;
+          padding-left: 10px; }
+        .contacto #field .news1 .news1__borrar {
+          background-color: #000080;
+          border: #000080;
+          color: #ffff;
+          font-weight: bold;
+          padding: 2%;
+          border-radius: 10%;
+          margin-left: 2%; }
   /*INFORMACIONGRAL.HTML*/
   .main__infogrl {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: "info1 fotog3" "fotog1 info2" "info3 fotog2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 150px 190px;
+    grid-template-areas: "info1 " "info2 " "info3 ";
     padding-top: 0px;
     margin-bottom: 0px;
-    padding: 5%;
-    margin: 0px; }
+    padding-left: 3%;
+    margin: 0px;
+    gap: .3%; }
     .main__infogrl .main__info1 {
       background-color: #ffffff;
       opacity: 0.7;
       padding-top: 2px;
       grid-area: info1; }
       .main__infogrl .main__info1 .main__infoh1 {
-        padding: 0;
-        font-size: 0.7rem;
-        text-shadow: none;
-        grid-area: info1; }
+        padding-left: 4%;
+        font-size: 0.75rem;
+        font-weight: bold;
+        grid-area: info1;
+        margin: 0; }
       .main__infogrl .main__info1 .main__infop1 {
-        padding: 4px;
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-top: 0;
         font-size: 0.7rem;
         text-align: justify;
-        grid-area: info1; }
+        grid-area: info1;
+        margin: 0; }
     .main__infogrl .fotog3 {
       height: 150px;
-      grid-area: fotog3; }
+      grid-area: fotog3;
+      display: none; }
     .main__infogrl .fotog1 {
       height: 150px;
-      grid-area: fotog1; }
+      padding-left: 3%;
+      grid-area: fotog1;
+      display: none; }
     .main__infogrl .main__info2 {
       background-color: #b0c263;
       opacity: 0.7;
       padding-top: 5px;
       grid-area: info2; }
       .main__infogrl .main__info2 .main__infoh2 {
-        padding: 0;
-        font-size: 0.7rem;
-        text-shadow: none;
-        grid-area: info2; }
+        padding-left: 4%;
+        font-size: 0.75rem;
+        font-weight: bold;
+        grid-area: info2;
+        margin: 0; }
       .main__infogrl .main__info2 .main__infop2 {
-        padding: 4px;
+        padding-left: 4%;
+        padding-right: 4%;
         font-size: 0.7rem;
         text-align: justify;
-        grid-area: info2; }
+        grid-area: info2;
+        margin: 0; }
     .main__infogrl .main__info3 {
       background-color: #ebd096;
       opacity: 0.7;
       padding-top: 5px;
       grid-area: info3; }
       .main__infogrl .main__info3 .main__infoh3 {
-        padding: 0;
-        font-size: 0.7rem;
-        text-shadow: none;
-        grid-area: info3; }
+        padding-left: 4%;
+        font-size: 0.75rem;
+        font-weight: bold;
+        grid-area: info3;
+        margin: 0; }
       .main__infogrl .main__info3 .main__infop3 {
-        padding: 4px;
+        padding-left: 4%;
+        padding-right: 4%;
         font-size: 0.7rem;
         text-align: justify;
-        grid-area: info3; }
+        grid-area: info3;
+        margin: 0; }
     .main__infogrl .fotog2 {
       height: 150px;
-      grid-area: fotog2; }
+      grid-area: fotog2;
+      display: none; }
   /*CSS FOOTER - COMÚN PARA TODOS LOS HTML*/
   .grid__footer {
     bottom: 0%;
+    width: 100%;
+    position: relative;
     padding-bottom: 10px;
     color: #ffffff;
     box-shadow: 10px 0px 10px #313030be;
@@ -950,7 +997,7 @@ h1 {
       margin-left: 10px; }
       .grid__footer .direccion p {
         margin-left: 2px;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-top: 4px;
         color: #ffffff;
         font-weight: 400; }
@@ -959,17 +1006,19 @@ h1 {
         height: 17px;
         margin-top: 4px; }
     .grid__footer .foot__iframe {
-      width: 80px;
-      height: 45px;
-      overflow: hidden;
       grid-area: foot__iframe;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border: 3px solid #121d33;
       border-radius: 7px;
-      margin-top: 6px;
-      margin-bottom: 5px; }
+      margin-top: 4%;
+      width: 70%;
+      height: 100%;
+      position: relative; }
+      .grid__footer .foot__iframe iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0%; }
     .grid__footer .telefono {
       grid-area: telefono;
       display: flex;
@@ -977,7 +1026,7 @@ h1 {
       margin-left: 10px; }
       .grid__footer .telefono p {
         margin-left: 2px;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-top: 4px;
         color: #ffffff;
         font-weight: 400; }
@@ -992,7 +1041,7 @@ h1 {
       margin-left: 10px; }
       .grid__footer .horario p {
         margin-left: 2px;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-top: 4px;
         color: #ffffff;
         font-weight: 400; }
@@ -1007,7 +1056,7 @@ h1 {
       margin-left: 10px; }
       .grid__footer .email p {
         margin-left: 2px;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-top: 4px;
         color: #ffffff;
         font-weight: 400; }
@@ -1022,7 +1071,7 @@ h1 {
       margin-left: 10px; }
       .grid__footer .web p {
         margin-left: 2px;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-top: 4px;
         color: #ffffff;
         font-weight: 400; }
@@ -1031,12 +1080,12 @@ h1 {
         height: 17px;
         margin-top: 4px; }
     .grid__footer .seguinos {
-      text-align: end;
+      text-align: center;
       grid-area: seguinos;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       color: #ffffff;
       font-weight: 400;
-      margin-right: 20px; }
+      padding-right: 3%; }
     .grid__footer .logo {
       grid-area: logo;
       display: inline-flex;
@@ -1044,7 +1093,7 @@ h1 {
       justify-content: center;
       margin-left: 1px;
       padding-left: 1px; }
-      .grid__footer .logo img {
+      .grid__footer .logo a img {
         width: 20px;
         height: 20px; } }
 
@@ -1062,11 +1111,11 @@ h1 {
   body {
     background-image: url("../imagenes/pampa leoncito.png");
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: auto; }
   h1 {
     color: #e09d0a;
     text-shadow: 4px 2px 2px #645942;
-    font-size: 0.9rem;
+    font-size: .7rem;
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
@@ -1080,8 +1129,9 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 110px 110px 110px 200px 125px;
     grid-template-areas: " index__1 index__1" "video foto1" "video foto2" "foto4 foto5" "foto3 foto3" "index__2 index__2";
-    padding: 10px;
-    gap: 8px; }
+    padding: 3%;
+    gap: 1%;
+    width: 100%; }
     .grilla__index .index__1 {
       grid-area: index__1;
       background-color: #ffffff;
@@ -1090,7 +1140,7 @@ h1 {
       padding-left: 8px;
       padding-right: 8px; }
       .grilla__index .index__1 .index__p1 {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         color: #00061a;
         text-align: center;
         font-weight: bold;
@@ -1111,30 +1161,35 @@ h1 {
         grid-area: index__2; }
     .grilla__index .main__iframe {
       grid-area: video;
-      border-radius: 7px;
-      width: 100%;
-      height: 220px; }
+      height: 0;
+      position: relative; }
+      .grilla__index .main__iframe iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0%; }
     .grilla__index .foto1 {
       background-image: url("../imagenes/puma.png");
       background-size: cover;
       grid-area: foto1;
-      border-radius: 7px; }
+      border-radius: 7px;
+      padding-bottom: 1%; }
     .grilla__index .foto1:hover {
       transform: scale3d(1.3, 1.3, 1.3); }
     .grilla__index .foto2 {
       background-image: url("../imagenes/florleoncito.png");
       background-size: cover;
       grid-area: foto2;
-      border-radius: 7px; }
+      border-radius: 7px;
+      padding-bottom: 1%; }
     .grilla__index .foto2:hover {
       transform: scale3d(1.3, 1.3, 1.3); }
     .grilla__index .foto3 {
       background-image: url("../imagenes/mirador2.png");
       background-size: cover;
       grid-area: foto3;
-      border-radius: 7px;
-      width: auto;
-      height: auto; }
+      border-radius: 7px; }
     .grilla__index .foto3:hover {
       transform: scale3d(1.3, 1.3, 1.3); }
     .grilla__index .foto4 {
@@ -1330,8 +1385,15 @@ h1 {
         width: auto; }
       .main__carro .galeria__carro .carro__f4 {
         grid-area: carro4;
-        height: auto;
-        width: auto; }
+        height: 0;
+        position: relative; }
+        .main__carro .galeria__carro .carro__f4 iframe {
+          position: absolute;
+          height: 160px;
+          width: 100%;
+          top: 0;
+          left: 0%;
+          border: 4px solid #ffffff; }
       .main__carro .galeria__carro .carro__f5 {
         grid-area: carro5;
         background-image: url("../imagenes/PampaElLeoncito.png");
@@ -1342,41 +1404,38 @@ h1 {
         height: auto;
         width: auto; }
   /*CSS CONTACTO.HTML*/
-  #field {
+  .contacto #field {
     border: 3px solid #002db3;
-    width: 90%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    width: 80%;
     padding: 1%;
     color: #002db3;
     font-size: 1rem;
     font-weight: bolder;
     background: linear-gradient(3deg, #db8e22 0%, #ecaa5d 36%, #f9d39d 70%, #ffebce 100%);
     opacity: 0.8; }
-    #field #form {
+    .contacto #field #form {
       color: #000080;
       font-weight: bolder;
       font-size: 0.8rem; }
-    #field .form__label1 {
+    .contacto #field .form__label1 {
       display: inline-block;
       position: relative;
       left: 1%; }
-    #field .form__label2 {
+    .contacto #field .form__label2 {
       display: inline-block;
       position: relative;
       left: 0.8%; }
-    #field #texto {
+    .contacto #field #texto {
       cursor: text; }
-    #field .news {
+    .contacto #field .news {
       display: block;
       justify-content: space-evenly; }
-    #field .news1 {
+    .contacto #field .news1 {
       display: flex;
       justify-content: space-evenly;
       width: 70%;
       margin: 8px; }
-      #field .news1 .news1__enviar {
+      .contacto #field .news1 .news1__enviar {
         background-color: #000080;
         border: #000080;
         color: #ffff;
@@ -1384,7 +1443,7 @@ h1 {
         padding: 2%;
         border-radius: 15%;
         padding-left: 10px; }
-      #field .news1 .news1__borrar {
+      .contacto #field .news1 .news1__borrar {
         background-color: #000080;
         border: #000080;
         color: #ffff;
@@ -1483,17 +1542,19 @@ h1 {
         height: 17px;
         margin-top: 4px; }
     .grid__footer .foot__iframe {
-      width: 120px;
-      height: 70px;
-      overflow: hidden;
       grid-area: foot__iframe;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border: 3px solid #121d33;
       border-radius: 7px;
-      margin-top: 6px;
-      margin-bottom: 10px; }
+      margin-top: 4%;
+      width: 70%;
+      height: 100%;
+      position: relative; }
+      .grid__footer .foot__iframe iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0%; }
     .grid__footer .telefono {
       grid-area: telefono;
       display: flex;
@@ -1569,8 +1630,8 @@ h1 {
       margin-left: 2px;
       padding-left: 1px; }
       .grid__footer .logo img {
-        width: 25px;
-        height: 25px; } }
+        width: 20px;
+        height: 20px; } }
 
 @media only screen and (min-width: 768px) {
   /*CONFIGURACION GENERAL*/
@@ -1855,8 +1916,15 @@ h1 {
         width: auto; }
       .main__carro .galeria__carro .carro__f4 {
         grid-area: carro4;
-        height: 300px;
-        width: auto; }
+        height: 0;
+        position: relative; }
+        .main__carro .galeria__carro .carro__f4 iframe {
+          position: absolute;
+          height: 300px;
+          width: 100%;
+          top: 0;
+          left: 0%;
+          border: 4px solid #ffffff; }
       .main__carro .galeria__carro .carro__f5 {
         grid-area: carro5;
         background-image: url("../imagenes/PampaElLeoncito.png");
@@ -1869,10 +1937,7 @@ h1 {
   /*CSS CONTACTO.HTML*/
   #field {
     border: 3px solid #002db3;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    width: 70%;
     padding: 1%;
     color: #002db3;
     font-size: 1rem;
@@ -2009,17 +2074,19 @@ h1 {
         height: 17px;
         margin-top: 6px; }
     .grid__footer .foot__iframe {
-      width: 120px;
-      height: 70px;
-      overflow: hidden;
       grid-area: foot__iframe;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border: 3px solid #121d33;
       border-radius: 7px;
-      margin-top: 6px;
-      padding-bottom: 10px; }
+      margin-top: 4%;
+      width: 70%;
+      height: 100%;
+      position: relative; }
+      .grid__footer .foot__iframe iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0%; }
     .grid__footer .telefono {
       grid-area: telefono;
       display: flex;
@@ -2124,14 +2191,15 @@ h1 {
     animation: heartBeat;
     animation-duration: 5s;
     font-stretch: expanded; }
-  /*INDEX.HTML*/
+  /*HTML INDEX*/
   .grilla__index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 300px 220px 220px 250px;
     grid-template-areas: " index__1 index__1 index__1 index__1 " "video video foto1 foto2" "video video foto4 foto5" "foto3 index__2 index__2 index__2";
     padding: 20px;
-    gap: 10px; }
+    gap: 10px;
+    width: 100%; }
     .grilla__index .index__1 {
       grid-area: index__1;
       background-color: #ffffff;
@@ -2197,6 +2265,7 @@ h1 {
       border-radius: 7px; }
     .grilla__index .foto5:hover {
       transform: scale3d(1.3, 1.3, 1.3); }
+  /*HTML ASTROTURISMO*/
   .astro__grilla {
     display: grid;
     grid-template-columns: 700px 1fr 1fr 1fr;
@@ -2206,7 +2275,8 @@ h1 {
     margin-bottom: 0px;
     padding: 20px;
     margin: 0px;
-    gap: 5px; }
+    gap: 5px;
+    width: 100%; }
     .astro__grilla .astro__texto {
       grid-area: texto;
       text-align: justify;
@@ -2255,6 +2325,7 @@ h1 {
       background-size: cover;
       margin-right: 10px;
       border: 8px outset; }
+  /*HTML CAMINATA*/
   .main__caminata {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2263,7 +2334,8 @@ h1 {
     padding-top: 0px;
     margin-bottom: 0px;
     padding: 5%;
-    margin: 0px; }
+    margin: 0px;
+    width: 100%; }
     .main__caminata .main__cam1 {
       background-color: #ebd096;
       opacity: 0.7;
@@ -2327,16 +2399,20 @@ h1 {
       transition: all 3s; }
     .main__caminata .fotoC3:hover {
       transform: rotateX(70deg); }
+  /*HTML CARROVELISMO*/
   .main__carro {
-    padding-left: 3%; }
+    width: 100%;
+    margin-top: 0; }
     .main__carro .carro__texto {
-      padding: 10px;
-      font-size: 1rem;
+      padding: 10%;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      font-size: 1.2rem;
       text-align: center;
       font-weight: bold;
-      margin-top: 30px; }
+      margin: 0; }
       .main__carro .carro__texto .carro__p {
-        padding: 20px; }
+        padding: 0%; }
     .main__carro .galeria__carro {
       display: grid;
       grid-template-columns: 400px 600px 400px;
@@ -2350,7 +2426,7 @@ h1 {
         grid-area: carro1;
         background-image: url("../imagenes/carrovelismo.png");
         background-size: cover;
-        border: 4px solid #000080;
+        border: 4px solid #ffffff;
         margin-left: 10px; }
       .main__carro .galeria__carro .carro__f2 {
         grid-area: carro2;
@@ -2358,28 +2434,35 @@ h1 {
         background-size: cover;
         margin-left: 10px;
         margin-bottom: 10px;
-        border: 4px solid #000080; }
+        border: 4px solid #ffffff; }
       .main__carro .galeria__carro .carro__f3 {
         grid-area: carro3;
         background-image: url("../imagenes/carro2.png");
         background-size: cover;
         margin-right: 10px;
-        border: 4px solid #000080; }
+        border: 4px solid #ffffff; }
       .main__carro .galeria__carro .carro__f4 {
-        grid-area: carro4; }
+        grid-area: carro4;
+        height: 0;
+        position: relative; }
+        .main__carro .galeria__carro .carro__f4 iframe {
+          position: absolute;
+          height: 300px;
+          width: 100%;
+          top: 0;
+          left: 0%;
+          border: 4px solid #ffffff; }
       .main__carro .galeria__carro .carro__f5 {
         grid-area: carro5;
         background-image: url("../imagenes/PampaElLeoncito.png");
         background-size: cover;
         margin-bottom: 10px;
         margin-right: 10px;
-        border: 4px solid #000080; }
+        border: 4px solid #ffffff; }
+  /*HTML CONTACTO*/
   #field {
     border: 3px solid #002db3;
-    width: 60%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    width: 30%;
     padding: 1%;
     color: #002db3;
     font-weight: bolder;
@@ -2421,6 +2504,7 @@ h1 {
         font-weight: bold;
         padding: 2%;
         border-radius: 10%; }
+  /* HTML INFORMACIONGRL*/
   .main__infogrl {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2429,7 +2513,8 @@ h1 {
     padding-top: 0px;
     margin-bottom: 0px;
     padding: 5%;
-    margin: 0px; }
+    margin: 0px;
+    width: 100%; }
     .main__infogrl .main__info1 {
       background-color: #ffffff;
       opacity: 0.7;
@@ -2487,7 +2572,8 @@ h1 {
   /*CSS FOOTER - COMÚN PARA TODOS LOS HTML*/
   .grid__footer {
     bottom: 0%;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
+    width: 100%;
     color: #ffffff;
     box-shadow: 10px 0px 10px #313030be;
     background-color: #143572;
@@ -2503,7 +2589,7 @@ h1 {
       padding-right: 5px; }
       .grid__footer .direccion p {
         margin-left: 12px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-top: 4px;
         color: #ffffff;
         font-weight: 400; }
@@ -2512,16 +2598,19 @@ h1 {
         height: 17px;
         margin-top: 4px; }
     .grid__footer .foot__iframe {
-      width: 180px;
-      height: 95px;
-      overflow: hidden;
       grid-area: foot__iframe;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border: 3px solid #121d33;
       border-radius: 7px;
-      margin-top: 6px; }
+      margin-top: 4%;
+      width: 70%;
+      height: 100%;
+      position: relative; }
+      .grid__footer .foot__iframe iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0%; }
     .grid__footer .telefono {
       grid-area: telefono;
       display: flex;
@@ -2529,15 +2618,14 @@ h1 {
       margin-left: 20px; }
       .grid__footer .telefono p {
         margin-left: 12px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-top: 6px;
         color: #ffffff;
         font-weight: 400; }
       .grid__footer .telefono ion-icon {
         width: 17px;
         height: 17px;
-        margin-top: 6px;
-        font-size: 1rem; }
+        margin-top: 6px; }
     .grid__footer .horario {
       grid-area: horario;
       display: flex;
@@ -2545,7 +2633,7 @@ h1 {
       margin-left: 20px; }
       .grid__footer .horario p {
         margin-left: 12px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-top: 6px;
         color: #ffffff;
         font-weight: 400; }
@@ -2560,7 +2648,7 @@ h1 {
       margin-left: 20px; }
       .grid__footer .email p {
         margin-left: 12px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-top: 6px;
         color: #ffffff;
         font-weight: 400; }
@@ -2575,7 +2663,7 @@ h1 {
       margin-left: 20px; }
       .grid__footer .web p {
         margin-left: 12px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-top: 6px;
         color: #ffffff;
         font-weight: 400; }
@@ -2587,10 +2675,10 @@ h1 {
     .grid__footer .seguinos {
       text-align: end;
       grid-area: seguinos;
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: #ffffff;
       font-weight: 400;
-      margin-right: 45px; }
+      margin-right: 5%; }
     .grid__footer .logo {
       grid-area: logo;
       display: inline-flex;
