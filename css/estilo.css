@@ -441,6 +441,7 @@ body {
 .grid__footer {
   bottom: 0%;
   padding-bottom: 2%;
+  position: fixed;
   width: 100%;
   color: #ffffff;
   box-shadow: 10px 0px 10px #313030be;
@@ -589,12 +590,12 @@ body {
     body .grilla__index {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 300px 90px 90px 120px;
+      grid-template-rows: 270px 90px 90px 120px;
       grid-template-areas: " index__1 index__1" "video video" "video video" "foto1 foto2";
       padding: 1%;
       gap: 0.3%;
       width: 100%;
-      padding-bottom: 3%; }
+      margin-bottom: 3%; }
       body .grilla__index .index__1 {
         grid-area: index__1;
         background-color: #ffffff;
@@ -651,7 +652,7 @@ body {
   body .astro__grilla {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 200px 180px 200px;
     grid-template-areas: "texto" "texto" "astro3";
     padding-top: 0px;
     margin-bottom: 0px;
@@ -667,16 +668,16 @@ body {
       border: 2px ridge; }
       body .astro__grilla .astro__texto .astro__p {
         grid-area: texto;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         font-weight: bold;
         padding: 3%;
-        padding-top: 0;
+        padding-top: 2%;
         margin-bottom: 0;
         color: #ffffff; }
       body .astro__grilla .astro__texto h4 {
         color: #e09d0a;
         grid-area: texto;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         padding-left: 2%;
         text-shadow: 2px 2px #242222; }
       body .astro__grilla .astro__texto .a__h4 {
@@ -685,7 +686,7 @@ body {
         color: #a0bcf0; }
       body .astro__grilla .astro__texto .astro__p2 {
         grid-area: texto;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         font-weight: bold;
         padding: 3%;
         padding-top: 0;
@@ -743,6 +744,7 @@ body {
         grid-area: cam1; }
     .main__caminata .fotoC1 {
       height: 100px;
+      width: 100%;
       grid-area: fotoC1;
       transition: all 3s;
       border: .1px solid #b0c263; }
@@ -750,6 +752,7 @@ body {
       transform: rotateX(70deg); }
     .main__caminata .fotoC2 {
       height: 100px;
+      width: 100%;
       grid-area: fotoC2;
       transition: all 3s;
       border: .1px solid #b0c263; }
@@ -797,9 +800,10 @@ body {
   /*CARROVELISMO.HTML*/
   .main__carro {
     width: 100%;
-    padding-bottom: 3%; }
+    padding-bottom: 3%;
+    margin-bottom: 10%; }
     .main__carro .carro__texto {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       text-align: center;
       font-weight: bold;
       margin: 0;
@@ -812,8 +816,8 @@ body {
     .main__carro .galeria__carro {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 160px;
-      grid-template-areas: "carro4 " "carro4 ";
+      grid-template-rows: 200px;
+      grid-template-areas: "carro4 ";
       padding-top: 0px;
       margin-bottom: 3%;
       margin: 1%;
@@ -834,7 +838,7 @@ body {
         position: relative; }
         .main__carro .galeria__carro .carro__f4 iframe {
           position: absolute;
-          height: 160px;
+          height: 200px;
           width: 80%;
           top: 0;
           left: 8%;
@@ -850,7 +854,7 @@ body {
     width: 90%;
     margin-left: 5%;
     margin-top: 10%;
-    padding-bottom: 7%; }
+    margin-bottom: 35%; }
     .contacto #field {
       border: 3px solid #002db3;
       padding: 1%;
@@ -865,11 +869,12 @@ body {
         font-size: 0.8rem; }
       .contacto #field .form__label1 {
         display: inline-block;
-        position: relative; }
+        position: relative;
+        padding-top: 2%; }
       .contacto #field .form__label2 {
         display: inline-block;
         position: relative;
-        left: 1%; }
+        left: 3.1%; }
       .contacto #field #texto {
         cursor: text;
         width: 90%;
@@ -982,7 +987,7 @@ body {
     bottom: 0%;
     width: 100%;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
     color: #ffffff;
     box-shadow: 10px 0px 10px #313030be;
     background-color: #143572;
@@ -1518,6 +1523,7 @@ body {
   /*CSS FOOTER - COMÚN A TODAS LAS HTML*/
   .grid__footer {
     bottom: 0%;
+    position: fixed;
     padding-bottom: 10px;
     color: #ffffff;
     box-shadow: 10px 0px 10px #313030be;
@@ -2050,6 +2056,7 @@ body {
   /*CSS FOOTER - COMÚN PARA TODOS LOS HTML*/
   .grid__footer {
     bottom: 0%;
+    position: fixed;
     padding-bottom: 10px;
     color: #ffffff;
     box-shadow: 10px 0px 10px #313030be;
@@ -2572,6 +2579,7 @@ body {
   /*CSS FOOTER - COMÚN PARA TODOS LOS HTML*/
   .grid__footer {
     bottom: 0%;
+    position: fixed;
     padding-bottom: 2%;
     width: 100%;
     color: #ffffff;
