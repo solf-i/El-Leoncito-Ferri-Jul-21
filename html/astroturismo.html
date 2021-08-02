@@ -8,31 +8,26 @@
     <link rel="shortcut icon" href="../imagenes/Leoncito.ico" />
     <meta name="description" content="Dentro del Parque Nacional El Leoncito, hay dos Observatorios y podemos pasar la noche allí para observar el cielo nocturno, guiados por personal especializado"/>
     <meta name="keywords"  content="EL LEONCITO, SAN JUAN, ARGENTINA, TURISMO, ASTROTURISMO, ESTRELLAS, OBSERVATORIO, VÍA LÁCTEA, ASTRÓNOMO"/>
-    <link rel="stylesheet" href="../css/estilo.css" />
     <meta name="author" content="Sol Ferri" />
-    <meta property="og title" content="El leoncito" />
-    <meta property="og description" content="Esta página promociona turísticamente el Parque Nacional El Leoncito, mostrando todas las actividades que se pueden realizar allí y contando parte de su historia " />
     <meta property="og:image" itemprop="image" href= "../imagenes/Logo-leoncito.png" />
-    <meta property="og:image:width" content="640"> <meta property="og:image:height" content="300"> 
-    <meta property="og locale" content="es_ES" />
-    <meta property="og url" content= "https://solf-i.github.io/Leoncito-Ferri-Jul-21/"/>
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content= "https://solf-i.github.io/Leoncito-Ferri-Jul-21/"/>
     <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   </head>
 
   <body>
   
+     <!--BARRA DE NAVEGACIÓN CON BOOTSTRAP-->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">  <img src="../imagenes/Logo-leoncito.png" alt="LOGO" width="100" height="60" />
-          <nav></a>
+        <a class="navbar-brand" href="#">  <img src="../imagenes/Logo-leoncito.png" alt="LOGO" width="100" height="60" /> <nav></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,21 +45,20 @@
       </div>
     </nav>
 
-    
-    <h1 class="animate__animated animate__heartBeat">ASTROTURISMO</h1>
+    <!--H1 CON ANIMACIÓN WOW-->
 
+    <h1 class="animate__animated animate__heartBeat">ASTROTURISMO</h1>
    
-      <main class="astro__grilla">
+     <!--MAIN QUE CONTIENE GRID SIN BOOTSTRAP-->
+    <main class="astro__grilla">
         <div class="astro__texto">
           <p class="astro__p">
             El Parque Nacional El Leoncito posee uno de los cielos más puros y
             tranquilos del mundo, con cielos despejados por más de 300 noches al
             año, que lo han convertido en la principal ventana argentina al cosmos
             por sus condiciones astronómicas ideales.
-            <br /><br />
-            
+            <br /><br />            
             En el área funcionan dos Observatorios:
-            <br />
           </p>
   
           <h4>Observatorio Dr. Carlos U. CESCO:</h4>
@@ -86,13 +80,17 @@
             acordarla con anticipación al 02648-441088 o 0264-4213653.
           </p>
         </div>
-  
+       
+        <!--LAS FOTOS ESTÁN EN EL SCSS COMO BACKGROUND-IMAGE DE CADA DIV-->
         <div class="astro__1"></div>
         <div class="astro__2"></div>
         <div class="astro__3"></div>
-  </main>
-  
- <footer class="grid__footer">
+
+    </main>
+
+     <!--FOOTER -->
+
+    <footer class="grid__footer">
               <div class="direccion">
                 <ion-icon name="home-outline"></ion-icon>
                 <p>Calle San Martín Oeste 223, Barreal. San Juan.</p>
@@ -143,15 +141,17 @@
                   </a>
                 </div>
               </div>
-            </footer>
-      
+    </footer>
     
- 
+    <!--SCRIPTS-->
+
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="css3-mediaqueries.js"></script>
+
   </body>
 </html>
